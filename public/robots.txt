@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+# https://developers.google.com/search/docs/advanced/robots/robots_meta_tag
+User-agent: *
+Disallow:
+
+
