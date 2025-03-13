@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 Before running this project, you need to install the following packages:
 - `react-router-dom`
+- `npm`
+
+-
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
