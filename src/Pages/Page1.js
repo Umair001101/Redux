@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addItem } from './selectedItemsSlice';
+import { addItem } from '../selectedItemsSlice';
 
 const Page1 = () => {
   const [selectedItems, setSelectedItems] = useState([]);
