@@ -1,3 +1,8 @@
+// The Page1 component is a functional component that displays a list of iPhone models. 
+// Each iPhone model is displayed as an image with its name and price. 
+// When an image is clicked, the handleSelectItem function is called to toggle the selection of the item.
+// The selected items are stored in the selectedItems state using the useState hook. 
+// The handleNext function is called when the "Go to Android Page" button is clicked, which navigates the user to the /page2 route using the useNavigate hook.
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -27,7 +32,7 @@ const Page1 = () => {
           { name: 'iPhone 14 Pro Max', price: '$999', img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-14-pro-max-gold-202404?wid=2000&hei=1897&fmt=jpeg&qlt=95&.v=1713200629537' },
           { name: 'iPhone 15 Pro Max', price: '$1199', img: 'https://buy.gazelle.com/cdn/shop/files/iPhone_15_Pro_Max_-_Natural_titanium-_Overlap_Trans-cropped.jpg?v=1740079270&width=1946' },
         ].map((phone) => (
-          <div style={styles.itemContainer} onClick={() => handleSelectItem(phone.name)}>
+          <div key={phone.name} style={styles.itemContainer} onClick={() => handleSelectItem(phone.name)}>
             <img 
               src={phone.img} 
               alt={phone.name} 
@@ -43,6 +48,7 @@ const Page1 = () => {
     </div>
   );
 };
+
 const styles = {
   pageContainer: {
     display: 'flex',
@@ -52,43 +58,45 @@ const styles = {
     height: '100vh',
     backgroundColor: '#f7f7f7',
     textAlign: 'center',
+    fontFamily: 'Arial, sans-serif',
   },
   pageTitle: { 
     fontSize: '2.5rem',
     fontWeight: '700',
     marginBottom: '20px',
     color: '#333' 
-    },
+  },
   subtitle: { 
     fontSize: '1.5rem',
     fontWeight: '600',
     color: '#555', 
     marginBottom: '20px' 
-    },
+  },
   imagesContainer: {
     display: 'flex',
     gap: '20px',
     flexWrap: 'wrap',
     justifyContent: 'center',
     marginBottom: '30px'
-   },
+  },
   itemContainer: { 
     textAlign: 'center',
-    cursor: 'pointer' 
+    cursor: 'pointer',
+    transition: 'transform 0.3s ease',
   },
   image: { 
     width: '200px',
     height: '200px',
     borderRadius: '8px',
-    transition: '0.3s ease'
-   },
+    transition: 'transform 0.3s ease, opacity 0.3s ease'
+  },
   selectedImage: {
-    width: '150px',
-    height: '180px',
+    width: '200px',
+    height: '200px',
     borderRadius: '8px',
     transform: 'scale(1.1)',
     opacity: '0.7',
-    transition: '0.3s ease' 
+    transition: 'transform 0.3s ease, opacity 0.3s ease' 
   },
   itemText: {
     fontSize: '1rem',
@@ -104,6 +112,12 @@ const styles = {
     borderRadius: '8px',
     cursor: 'pointer',
     marginTop: '20px',
-    transition: '0.3s ease' },
+    transition: 'background-color 0.3s ease, transform 0.3s ease',
+  },
+  nextButtonHover: {
+    backgroundColor: '#1976d2',
+    transform: 'scale(1.05)',
+  }
 };
+
 export default Page1;

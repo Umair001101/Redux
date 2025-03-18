@@ -1,3 +1,8 @@
+// The Page1 component is a functional component that displays a list of Samsung models. 
+// Each Samsung model is displayed as an image with its name and price. 
+// When an image is clicked, the handleSelectItem function is called to toggle the selection of the item. 
+// The selected items are stored in the selectedItems state using the useState hook. 
+// The handleNext function is called when the "Total Selected Phones" button is clicked, which navigates the user to the /page3 route using the useNavigate hook.
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -125,3 +130,4 @@ const styles = {
    },
 };
 export default Page2;
+
