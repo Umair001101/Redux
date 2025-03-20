@@ -60,7 +60,7 @@ my-app/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/my-app.git
+   git clone https://github.com/Umair001101/Redux.git
    cd my-app
    ```
 
