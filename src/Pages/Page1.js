@@ -51,6 +51,7 @@ const Page1 = () => {
 
 const styles = {
   pageContainer: {
+    
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -58,7 +59,7 @@ const styles = {
     height: '100vh',
     backgroundColor: '#f7f7f7',
     textAlign: 'center',
-    fontFamily: 'Arial, sans-serif',
+    fontFamily: 'Big Shoulders Stencil, sans-serif',
   },
   pageTitle: { 
     fontSize: '2.5rem',

@@ -1,3 +1,9 @@
+// The Page3 component is a functional component that displays a list of selected models. 
+// Each Selected cellphone model is displayed as an image with its name and price. 
+// The Total price of selected models is displayed at the bottom of the page.
+// The handlePage2 function is called when the " Go to Android Page" button is clicked, which navigates the user to the /page2 route using the useNavigate hook.
+// The handleBack function is called when the "  Go to Iphone Page" button is clicked, which navigates the user to the /page1 route using the useNavigate hook.
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -61,6 +67,7 @@ const styles = {
     backgroundColor: '#f7f7f7',
     textAlign: 'center',
     padding: '20px',
+    fontFamily: 'Big Shoulders Stencil, sans-serif',
   },
   pageTitle: {
     fontSize: '2.5rem',

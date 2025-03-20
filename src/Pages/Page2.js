@@ -1,4 +1,4 @@
-// The Page1 component is a functional component that displays a list of Samsung models. 
+// The Page2 component is a functional component that displays a list of Samsung models. 
 // Each Samsung model is displayed as an image with its name and price. 
 // When an image is clicked, the handleSelectItem function is called to toggle the selection of the item. 
 // The selected items are stored in the selectedItems state using the useState hook. 
@@ -64,6 +64,7 @@ const styles = {
     height: '100vh',
     backgroundColor: '#f7f7f7',
     textAlign: 'center',
+    fontFamily: 'Big Shoulders Stencil, sans-serif',
   },
   pageTitle: { 
     fontSize: '2.5rem',
