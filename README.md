@@ -66,9 +66,11 @@ my-app/
 
 2. Install dependencies:
    ```bash
-   npm install
+   npm install,
    ```
-
+   ```bash
+   npm react-router-dom
+   ```
 3. Start the development server:
    ```bash
    npm start
