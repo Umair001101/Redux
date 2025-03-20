@@ -70,6 +70,11 @@ my-app/
    ```
    ```bash
    npm react-router-dom
+   npm install @reduxjs/toolkit react-redux react-router-dom
+   ```
+   ```
+   ```bash
+    npm install @reduxjs/toolkit react-redux react-router-dom
    ```
 3. Start the development server:
    ```bash
