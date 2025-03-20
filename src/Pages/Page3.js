@@ -7,7 +7,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-
 const phoneData = [
   { name: 'Iphone 12', price: 599, img: 'https://i5.walmartimages.com/seo/Restored-Apple-iPhone-12-Mini-Carrier-Unlocked-64-GB-White-Refurbished_13f84eb7-17d5-4df0-a7b8-f1abb0df1e33.f4a62ea4bbc5a65840cbfa14040e561a.jpeg.' },
   { name: 'Iphone 13', price: 699, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsPHkfZEkBSMUwD2V5iryzmTMtDfnAHwnimA&s' },
